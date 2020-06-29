@@ -530,7 +530,7 @@ void HttpSession::httpProcess(SP_HttpProcessContext spProContext)
             spProContext->keepAlive = false;//HTTP/1.0默认短连接
         }            
     }
-
+    std::cout<<"path is "<<path<<std::endl;
     if("/" == path)// 路径为根目录，返回主页
     {        
         path = "/index.html";
