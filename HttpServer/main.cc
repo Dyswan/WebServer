@@ -1,6 +1,3 @@
-/* author: chen tongjie
- * last updated: 2019-7-21
- * HttpServer */
 #include <iostream>
 #include <signal.h>
 #include <sys/prctl.h>
