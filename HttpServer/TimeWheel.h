@@ -1,5 +1,4 @@
 /* 
- * last edited: 2019-7-28
  * 时间轮设计：采用boost库中的circular_buffer作为时间轮容器，采用timerfd作为定时器，
  * 每过1s，则将时间轮旋转1格。若TcpServer开启了剔除空闲连接，则当新建连接时，向时间
  * 轮中插入一个与TcpConnection绑定的Entry的智能指针。原先设计参考muduo库，每当TcpCo-
